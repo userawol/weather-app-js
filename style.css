@@ -40,15 +40,43 @@ body::before {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.15));
     border-radius: 12px;
     backdrop-filter: blur(100px);
+    padding: 20px;
+}
+
+.input-container{
+    position: relative;
+}
+
+.city-input{
+    width: 100%;
+    border: 3px solid transparent;
+    border-radius:99px;
+    padding: 10px 16px;
+    background: rgba(0, 0, 0, 0.15);
+    outline: none;
+    font-weight: 500px;
+    transition:0.25s border;
+
+}
+
+.city-input:focus{
+    border: 3px solid rgba(0, 0, 0, 0.15);
+}
     
+
+.city-input::placeholder{
+    color: rgba(225,225,225,0.75);
+}
+
+.search-btn{
+    position: absolute;
+    border: none;
+    background: none;
+    transform: translateY(-50%);
+    display: flex;
+    cursor: pointer;
+    right:16px;
+    top: 50%;
     
-
-
-
-
-
-
-
-
 
 }
